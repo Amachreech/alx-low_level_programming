@@ -2,17 +2,16 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Entrt point
+ * main - Entry
  *
  * Return: Always 0 (successful)
  */
 int main(void)
 {
-	char low;
+	char h;
 
-	for (low = 'a'; low <= 'z'; low++)
-		putchar(low);
-		printf("\n");
-
+	for (h = 'a'; h <= 'z'; h++)
+		putchar(h);
+	putchar('\n')
 	return (0);
 }
