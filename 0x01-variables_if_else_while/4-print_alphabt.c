@@ -1,8 +1,7 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
- * main - Entry
- * Description: lowercase
+ * main - main block
+ * Description:last digit, compare it with 5
  * Return: 0
  */
 int main(void)
@@ -11,7 +10,10 @@ int main(void)
 
 	while (c <= 'z')
 	{
-		putchar(c);
+		if (c != 'e' && c != 'q')
+		{
+			putchar(c);
+		}
 		c++;
 	}
 

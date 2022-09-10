@@ -1,31 +1,26 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-
+#include <time.h>
+#include <stdlib.h>
 /**
- * main - Prints if number is positive, zero or negative
- *
- * Return: Always (Success)
+ * main - Entry
+ * Description:compare last digit with 5
+ * Return: 0
  */
 int main(void)
 {
 	int n;
-	
+	int last;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	
-	if (n > 0)
-	{
-		printf("%d is positive\n", n);
-	}
-	else if (n == 0)
-	{
-		printf("%d is zero\n", n);
-	}
-	else
-	{
-		printf("%d is negative\n", n);
-	}
-	
+	last = n % 10;
+
+	if (last > 5)
+		printf("Last digit of %i is %i and is greater than 5\n", n, last);
+	else if (last == 0)
+		printf("Last digit of %i is %i and is 0\n", n, last);
+	else if (last < 6)
+		printf("Last digit of %i is %i and is less than 6 and not 0\n", n, last);
+
 	return (0);
 }

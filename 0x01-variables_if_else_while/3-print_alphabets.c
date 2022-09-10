@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
- * main - Entry
- * Description: lowercase
+ * main - main block
+ * Description:prints lowercase,
+ * and then in uppercase
  * Return: 0
  */
 int main(void)
@@ -10,6 +10,14 @@ int main(void)
 	char c = 'a';
 
 	while (c <= 'z')
+	{
+		putchar(c);
+		c++;
+	}
+
+	c = 'A';
+
+	while (c <= 'Z')
 	{
 		putchar(c);
 		c++;

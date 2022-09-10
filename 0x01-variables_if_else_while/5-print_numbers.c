@@ -1,15 +1,17 @@
 #include <stdio.h>
+#include <time.h>
 #include <stdlib.h>
 /**
  * main - Entry
- * Description: lowercase
+ * Description: prints single digits of base 10
+ * from 0.
  * Return: 0
  */
 int main(void)
 {
-	char c = 'a';
+	char c = '0';
 
-	while (c <= 'z')
+	while (c <= '9')
 	{
 		putchar(c);
 		c++;
