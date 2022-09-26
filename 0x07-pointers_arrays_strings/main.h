@@ -3,6 +3,8 @@
 #include <stddef.h>
 
 /**
+ * int prototypes()
+ * void prototypes()
  * Desc: Header file containing prototypes for all functions
  */
 
