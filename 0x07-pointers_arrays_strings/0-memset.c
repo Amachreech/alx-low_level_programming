@@ -5,6 +5,7 @@
  * @s: input pointer to char type
  *    represents the pointer to the
  *    block of memory to fill
+ * description:fills memory with a constant byte
  * @b: input variable of char type
  *    represents the character to
  *    fill s
